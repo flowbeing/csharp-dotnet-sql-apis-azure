@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = helloworld
-build_property.ProjectDir = /Users/admin/vscode/dotnet/c#-basics/helloworld/
+build_property.ProjectDir = /Users/admin/vscode/dotnet/c#/c#-basics/helloworld/

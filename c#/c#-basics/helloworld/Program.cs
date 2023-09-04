@@ -1,14 +1,27 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Console.WriteLine("Hello, World!");
 // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
 // Console.WriteLine("Hello, World!!");
+
+using System.Xml.Schema;
 
 namespace HelloWorld {
 
     public class Program {
 
+        // SCOPE
+        static int ClassInt = 8; // convention
+        static string classString = "classString"; // to demonstrate scope
+
         static void Main(string[] args) {
+
+            int classInt = 9;
+            string classString = "methodString";
+
+
+            Console.WriteLine(classInt);
+            Console.WriteLine(classString);
 
             //// 1 byte is made up of 8 bits 00000000 - these bits can be used to store a number as follows
             // //// Each bit can be worth 0 or 1 of the value it is placed in
@@ -77,17 +90,77 @@ namespace HelloWorld {
 
             // List<List<string>> myIntList = new List<List<string>>();
 
-            string name = "C# is a fun programming language";
-            string[] nameSplit = name.Split(" ");
+            // string name = "C# is a fun programming language";
+            // string[] nameSplit = name.Split(" ");
 
-            IEnumerable<string> iEnumerableNameSplit = nameSplit;
+            // IEnumerable<string> iEnumerableNameSplit = nameSplit;
 
-            Console.WriteLine(iEnumerableNameSplit.Count());
+            // Console.WriteLine(iEnumerableNameSplit.Count());
 
-            Console.WriteLine(1 == 2);
-            Console.WriteLine(DateTime.Now);
+            // Console.WriteLine(1 == 2);
+            // Console.WriteLine(DateTime.Now);
+
+            // foreach(string value in nameSplit) {
+            //     Console.WriteLine(value);
+            // }
+
+            // DateTime startTime = DateTime.Now;
+            // DateTime currentTime = DateTime.Now;
+
+            // TimeSpan timeDiff = currentTime - startTime;
+
+            int[] intsArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
+            // string[] stringsArray = new string[] {};
+
+            // foreach (int i in intArray){
+            //     string iString = i.ToString();
+            //     stringsArray.Append(iString);
+            //     Console.WriteLine(iString);
+            // }
+
+            // Console.WriteLine(1.02343f + "i");
+
+            
+            DateTime startTime = DateTime.Now;
+
+            int total = 0;
+            foreach (int i in intsArray){
+                
+                total += i;
+
+            }
+
+            DateTime currentTime = DateTime.Now;
+
+            TimeSpan timeDiff = currentTime - startTime;
+            Console.WriteLine(timeDiff);
+
+            Console.WriteLine("");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("");
+
+            DateTime startTime2 = DateTime.Now;
+
+            GetSum(intsArray);
+
+            DateTime currentTime2 = DateTime.Now;
+
+            TimeSpan timeDiff2 = currentTime2 - startTime2;
+            Console.WriteLine(timeDiff2);
 
 
+        }
+
+        static public int GetSum(int[] intsArray){
+
+            int total = 0;
+            foreach (int i in intsArray){
+                
+                total += i;
+
+            }
+
+            return total;
 
         }
     }

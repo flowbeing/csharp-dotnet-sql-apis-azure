@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/vscode/dotnet/c#-basics/helloworld/helloworld.csproj",
+      "projectUniqueName": "/Users/admin/vscode/dotnet/c#/c#-basics/helloworld/helloworld.csproj",
       "projectName": "helloworld",
-      "projectPath": "/Users/admin/vscode/dotnet/c#-basics/helloworld/helloworld.csproj",
+      "projectPath": "/Users/admin/vscode/dotnet/c#/c#-basics/helloworld/helloworld.csproj",
       "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/vscode/dotnet/c#-basics/helloworld/obj/",
+      "outputPath": "/Users/admin/vscode/dotnet/c#/c#-basics/helloworld/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/admin/.nuget/NuGet/NuGet.Config"

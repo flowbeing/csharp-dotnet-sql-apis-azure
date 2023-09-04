@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uSB2VO6VLpIVw2UilxN+THjyIYnWRyH859q6iAAllvYYHg2te8RRUhTHaBsyVQ3fjfFpoo9VDBm4q0HcljvAyw==",
+  "dgSpecHash": "RCAyMNIHoPA9EKpFpG0t3FwfjRa/Zc1n75KM/sGIEDKZ25Fv1uU3/dA80b64+5NVI/mnPXcENRw53CevaQgICw==",
   "success": true,
-  "projectFilePath": "/Users/admin/vscode/dotnet/c#-basics/helloworld/helloworld.csproj",
+  "projectFilePath": "/Users/admin/vscode/dotnet/c#/c#-basics/helloworld/helloworld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

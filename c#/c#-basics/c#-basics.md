@@ -3,4 +3,5 @@ Topics Covered
 - Variable Types and Variable Manipulation; including numbers and strings
 - Data structures; Arrays, Lists & Dimensional Lists, Dictionaries, IEnumerables
 - If & Switch Case Statements
-- Loops; for loops & for-each loops
+- Loops & Their Time Efficiency; for loops & for-each loops & do-while loops
+- Class Methods & Scope
