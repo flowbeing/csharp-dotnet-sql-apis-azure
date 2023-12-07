@@ -1,0 +1,91 @@
+﻿// using System.Reflection;
+// using System.Text.Json;
+// using Newtonsoft.Json;
+
+// using HelloWorld.Models;
+// using System.Text.Json.Nodes;
+// using Newtonsoft.Json.Serialization;
+
+// namespace HelloWorld
+// {
+
+//     class ProgramOld
+//     {
+
+//         public static void Main(string[] args)
+//         {
+
+//             // EXPLORING JSON SERIALIZER (SYSTEM.TEXT.JSON) & NEWTONSOFT.JSON
+//             string computersJson = File.ReadAllText("Computers.json");
+//             // var json = JsonSerializer.Deserialize<IEnumerable<Computer>>(computersJson);
+
+//             // SYSTEM.TEXT.JSON JSON SERIALIZER
+//             // setting the (json serializer) property that ensures that the Json ("Computer" class) properties names match the actual defined "CamelCase"
+//             // structure of the defined Computer class's structure
+//             // JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions()
+//             // {
+//             //     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+//             // };
+
+//             // IEnumerable<Computer>? parsedJson = JsonSerializer.Deserialize<IEnumerable<Computer>>(computersJson, jsonSerializerOptions);
+
+//             // NEWTONSOFT.JSON JSONCONVERT
+//             IEnumerable<Computer>? parsedAndMappedComputerObjectsJson = JsonConvert.DeserializeObject<IEnumerable<Computer>>(computersJson);
+//             // string? parsedAndMappedComputerObjectsJsonString = parsedAndMappedComputerObjectsJson?.ToString();
+//             // var jsonified = JsonConvert.SerializeObject(new Dictionary<String, String>() { { "key", "someValue" } });
+
+//             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
+//             {
+//                 ContractResolver = new CamelCasePropertyNamesContractResolver()
+//             };
+
+//             var serializedComputers = JsonConvert.SerializeObject(parsedAndMappedComputerObjectsJson);
+
+//             Console.WriteLine($"serializedComputers: {serializedComputers}");
+
+
+//             // List<string> listOfStrings = new List<string>() { "1", "2", "3" };
+//             // string jsonifiedListOfStrings = JsonSerializer.Serialize<List<string>>(listOfString);
+
+//             // IEnumerable<string> iterableListOfStrings = listOfString; // reviewing IEnumerable
+
+//             // LISTING EACH COMPUTER WITHIN IENUMERABLE LIST OF COMPUTERS
+//             // if (parsedAndMappedComputerObjectsJson != null)
+//             // {
+
+//             //     foreach (var computer in parsedAndMappedComputerObjectsJson)
+//             //     {
+
+//             //         Console.WriteLine($"ComputerId: {computer.ComputerId}, MotherBoard: {computer.MotherBoard}, HasWifi: {computer.HasWifi}, HasLTE: {computer.HasLTE}, ReleaseDate: {computer.ReleaseDate}, Price: {computer.Price}, VideoCard: {computer.VideoCard}");
+//             //         // File.WriteAllText("computers.txt", computer);
+//             //         Console.WriteLine($"type: ${computer.GetType()}");
+
+//             //     }
+
+//             // }
+
+
+//             // List<int> str = new List<int>{1, 2, 3};
+
+
+//             // Console.WriteLine("json" + 4);
+
+//             var p = new PrintString();
+//             // int result = p.Print<>("hi there");
+//             // Console.WriteLine($"result: {result}");
+
+
+//         }
+
+//         public class PrintString
+//         {
+
+//             public int Print<Int32>(string someString)
+//             {
+
+//                 return 4;
+
+//             }
+//         }
+//     }
+// }

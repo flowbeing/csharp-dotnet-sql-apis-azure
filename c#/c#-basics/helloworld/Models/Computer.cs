@@ -5,10 +5,10 @@ namespace HelloWorld.Models
     {
 
         public int ComputerId { get; set; }
-        public string MotherBoard { get; set; }
+        public string Motherboard { get; set; }
         public bool HasWifi { get; set; }
         public bool HasLTE { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public DateTime? ReleaseDate { get; set; }
 
         public decimal Price { get; set; }
 
@@ -18,15 +18,19 @@ namespace HelloWorld.Models
         {
 
             // applying empty string to (String) variables that have a null value
-            if (MotherBoard == null)
+            if (Motherboard == null)
             {
-                MotherBoard = "";
+                Motherboard = "";
             }
 
             if (VideoCard == null)
             {
                 VideoCard = "";
             }
+            // if (ReleaseDate == null)
+            // {
+            //     ReleaseDate = ""
+            // }
 
         }
 
@@ -35,7 +39,7 @@ namespace HelloWorld.Models
         {
             // if (Compu)
             Console.WriteLine($"ComputerId: {ComputerId}");
-            Console.WriteLine($"MotherBoard: {MotherBoard}");
+            Console.WriteLine($"MotherBoard: {Motherboard}");
             Console.WriteLine($"HasWifi: {HasWifi}");
             Console.WriteLine($"HasLTE: {HasLTE}");
             Console.WriteLine($"ReleaseDate: {ReleaseDate}");
