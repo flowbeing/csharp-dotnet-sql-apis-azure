@@ -20,6 +20,8 @@ namespace HelloWorld
             string computerSnakeCase = File.ReadAllText("ComputersSnake.json");
 
             IEnumerable<ComputerSnake>? computersSnakeCaseIEnumerable = JsonSerializer.Deserialize<IEnumerable<ComputerSnake>>(computerSnakeCase);
+            IEnumerable<Computer>? computersIEnumerable = JsonSerializer.Deserialize<IEnumerable<Computer>>(computerSnakeCase);
+
 
             // Creating a Mapper => ComputerSnake (object) to Computer (object)
             AutoMapper.Mapper mapper = new AutoMapper.Mapper(new AutoMapper.MapperConfiguration(cfg =>
@@ -51,10 +53,10 @@ namespace HelloWorld
             }));
 
 
-            if (computersSnakeCaseIEnumerable != null)
+            if (computersIEnumerable != null)
             {
 
-                IEnumerable<Computer> computersIEnumerable = mapper.Map<IEnumerable<Computer>>(computersSnakeCaseIEnumerable);
+                // IEnumerable<Computer> computersIEnumerable = mapper.Map<IEnumerable<Computer>>(computersSnakeCaseIEnumerable);
 
                 // foreach (ComputerSnake computerSnake in computersSnakeCaseIEnumerable)
                 // {
